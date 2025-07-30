@@ -9,6 +9,32 @@
 </head>
 
 <body style = "background-color: black;">
-    <div div id="box" style="width: 100px; height: 100px; background-color: rgb(104, 104, 104);"></div>
+    
+    <!-- Create Map -->
+    <div id="box" style="width: 100px; height: 100px; background-color: rgb(104, 104, 104);"></div>
+
+    <script>
+        let room = document.getElementById("box");
+
+        box.addEventListener("keydown", () => {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    box.style.left -= 10;
+                    break;
+                case 'ArrowRight':
+                    box.style.left += 10;
+                    break;
+                case 'ArrowUp':
+                    box.style.top -= 10;
+                    break;
+                case 'ArrowDown':
+                    box.style.top += 10;
+                    break;
+                default:
+                    return; // 다른 키면 무시
+            }
+        });
+
+    </script>
 
 </body>
