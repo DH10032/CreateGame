@@ -1,5 +1,12 @@
 CreateGame
 
+
+# 1차 목표
+
+python으로 게임의 기본적인 틀 구현하기
+
+# 마무리 목표
+
 wayland
 linux api
 
