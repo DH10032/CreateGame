@@ -16,24 +16,31 @@
     <script>
         let room = document.getElementById("box");
 
-        box.addEventListener("keydown", () => {
-            switch(e.key) {
-                case 'ArrowLeft':
-                    box.style.left -= 10;
-                    break;
-                case 'ArrowRight':
-                    box.style.left += 10;
-                    break;
-                case 'ArrowUp':
-                    box.style.top -= 10;
-                    break;
-                case 'ArrowDown':
-                    box.style.top += 10;
-                    break;
-                default:
-                    return; // 다른 키면 무시
-            }
-        });
+        setInterval(() => {
+            box.addEventListener("keydown", (e) => {
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        box.style.left -= 10;
+                        break;
+                    case 'ArrowRight':
+                        box.style.left += 10;
+                        break;
+                    case 'ArrowUp':
+                        box.style.top -= 10;
+                        break;
+                    case 'ArrowDown':
+                        box.style.top += 10;
+                        break;
+                    default:
+                        return; // 다른 키면 무시
+                }
+            });
+        }, 100);
+        
+        box.style.left = left + 'px';
+        box.style.top = top + 'px';
+
+        e.preventDefault(); // 스크롤 방지용
 
     </script>
 
