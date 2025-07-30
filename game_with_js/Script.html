@@ -11,41 +11,41 @@
 <body style = "background-color: black;">
     
     <!-- Create Map -->
-    <div id="room" style="width: 100px; height: 100px; background-color: rgb(104, 104, 104);"></div>
+    <div id="box" style="width: 100px; height: 100px; background-color: rgb(104, 104, 104);"></div>
 
     <script>
         let room = document.getElementById("box");
-        room.style.left = "500px"
+
+        let left = 0;
+        let right = 0
 
         // room.addEventListener("click", () => {
         // room.style.left = "500px"; // 클릭 시 500px로 이동
         // });
 
-        setInterval(() => {
-            room.addEventListener("keydown", (e) => {
-                switch(e.key) {
-                    case 'ArrowLeft':
-                        room.style.left -= 10;
-                        break;
-                    case 'ArrowRight':
-                        room.style.left += 10;
-                        break;
-                    case 'ArrowUp':
-                        room.style.top -= 10;
-                        break;
-                    case 'ArrowDown':
-                        room.style.top += 10;
-                        break;
-                    default:
-                        return; // 다른 키면 무시
-                }
-            });
-        }, 100);
-        
-        room.style.left = left + 'px';
-        room.style.top = top + 'px';
+        // 방향키 이벤트는 document에 걸어야 동작함
+        document.addEventListener("keydown", (e) => {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    left -= 100;
+                    break;
+                case 'ArrowRight':
+                    left += 100;
+                    break;
+                case 'ArrowUp':
+                    top -= 100;
+                    break;
+                case 'ArrowDown':
+                    top += 100;
+                    break;
+                default:
+                    return;
+            }
 
-        e.preventDefault(); // 스크롤 방지용
+            room.style.left = left + "px";
+            room.style.top = top + "px";
+            e.preventDefault(); // 스크롤 방지
+        });
 
     </script>
 
