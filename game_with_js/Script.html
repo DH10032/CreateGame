@@ -16,6 +16,11 @@
     <script>
         let room = document.getElementById("box");
 
+        box.addEventListener("click", () => {
+        box.style.left = "500px"; // 클릭 시 500px로 이동
+        });
+
+        /*
         setInterval(() => {
             box.addEventListener("keydown", (e) => {
                 switch(e.key) {
@@ -41,6 +46,7 @@
         box.style.top = top + 'px';
 
         e.preventDefault(); // 스크롤 방지용
+        */
 
     </script>
 
