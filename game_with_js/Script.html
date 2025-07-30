@@ -15,26 +15,26 @@
 
     <script>
         let room = document.getElementById("box");
-        box.style.left = "500px"
-        box.addEventListener("click", () => {
-        box.style.left = "500px"; // 클릭 시 500px로 이동
-        });
+        room.style.left = "500px"
 
-        /*
+        // room.addEventListener("click", () => {
+        // room.style.left = "500px"; // 클릭 시 500px로 이동
+        // });
+
         setInterval(() => {
-            box.addEventListener("keydown", (e) => {
+            room.addEventListener("keydown", (e) => {
                 switch(e.key) {
                     case 'ArrowLeft':
-                        box.style.left -= 10;
+                        room.style.left -= 10;
                         break;
                     case 'ArrowRight':
-                        box.style.left += 10;
+                        room.style.left += 10;
                         break;
                     case 'ArrowUp':
-                        box.style.top -= 10;
+                        room.style.top -= 10;
                         break;
                     case 'ArrowDown':
-                        box.style.top += 10;
+                        room.style.top += 10;
                         break;
                     default:
                         return; // 다른 키면 무시
@@ -42,11 +42,10 @@
             });
         }, 100);
         
-        box.style.left = left + 'px';
-        box.style.top = top + 'px';
+        room.style.left = left + 'px';
+        room.style.top = top + 'px';
 
         e.preventDefault(); // 스크롤 방지용
-        */
 
     </script>
 
