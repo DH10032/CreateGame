@@ -27,11 +27,11 @@
         canvas.height = canvas.width = window.innerHeight;
 
         // Set the initial position of the shape
-        let x = 0;
-        let y = 0;
-        let grid = canvas.width/7;
-        const shapeSize = 50;
         const moveSpeed = canvas.width/7;
+        let shapeSize = grid/3;
+        let grid = canvas.width/7;
+        let x = grid/2-shapeSize;
+        let y = grid/2-shapeSize;
 
         // Function to draw the shape on the canvas
         function drawShape() {
