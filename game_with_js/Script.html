@@ -24,7 +24,7 @@
 
         let window_w = window.innerWidth;
         let window_h = window.innerHeight;
-        canvas.height = canvas.width = window.outerHeight;
+        canvas.height = canvas.width = window.innerHeight;
 
         // Set the initial position of the shape
         let x = 0;
@@ -40,9 +40,11 @@
             {
             ctx.lineTo(0, canvas.height/7*i);
             ctx.lineTo(canvas.width, canvas.height/7*i);
+            ctx.stroke();
 
             ctx.lineTo(canvas.width/7*i, 0);
             ctx.lineTo(canvas.width/7*i, canvas.height);
+            ctx.stroke();
             }
             
             ctx.fillStyle = "rgb(104, 104, 104)";
