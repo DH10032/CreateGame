@@ -29,8 +29,9 @@
         // Set the initial position of the shape
         let x = 0;
         let y = 0;
+        let grid = canvas.width/7;
         const shapeSize = 50;
-        const moveSpeed = 300;
+        const moveSpeed = canvas.width/7;
 
         // Function to draw the shape on the canvas
         function drawShape() {
@@ -39,14 +40,14 @@
             for(let i = 1 ; i < 8 ; i++)
             {
                 ctx,beginPath();
-                ctx.lineTo(0, canvas.height/7*i);
-                ctx.lineTo(canvas.width, canvas.height/7*i);
+                ctx.moveTo(0, grid*i);
+                ctx.lineTo(canvas.width, grid*i);
                 ctx.stroke();
                 ctx.closePath();
 
                 ctx,beginPath();
-                ctx.lineTo(canvas.width/7*i, 0);
-                ctx.lineTo(canvas.width/7*i, canvas.height);
+                ctx.moveTo(grid*i, 0);
+                ctx.lineTo(grid*i, canvas.height);
                 ctx.stroke();
                 ctx.closePath();
             }
