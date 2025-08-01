@@ -12,7 +12,7 @@
     
     <!-- Create Map -->
     
-    <canvas id="map_Canvas" width="2100" height="2100" style="border: 1px solid rgb(15, 14, 14);"></canvas>
+    <canvas id="map_Canvas" style="border: 1px solid rgb(15, 14, 14);"></canvas>
 
     <script>
         /*
@@ -21,6 +21,10 @@
 
         const canvas = document.getElementById("map_Canvas");
         const ctx = canvas.getContext("2d");
+
+        let window_w = window.outerWidth;
+        let window_h = window.outerHeight;
+        canvas.height = canvas.width = window.outerHeight;
 
         // Set the initial position of the shape
         let x = 0;
@@ -31,6 +35,16 @@
         // Function to draw the shape on the canvas
         function drawShape() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for(let i = 1 ; i < 8 ; i++)
+            {
+            ctx.lineTo(0, canvas.height/7*i);
+            ctx.lineTo(canvas.width, canvas.height/7*i);
+
+            ctx.lineTo(canvas.width/7*i, 0);
+            ctx.lineTo(canvas.width/7*i, canvas.height);
+            }
+            
             ctx.fillStyle = "rgb(104, 104, 104)";
             ctx.fillRect(x, y, shapeSize, shapeSize);
         }
