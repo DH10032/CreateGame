@@ -5,6 +5,8 @@
 
 python으로 게임의 기본적인 틀 구현하기
 
+1. tkinter
+
 ## 마무리 목표
 
 wayland
