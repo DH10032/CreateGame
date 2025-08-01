@@ -38,13 +38,16 @@
 
             for(let i = 1 ; i < 8 ; i++)
             {
-            ctx.lineTo(0, canvas.height/7*i);
-            ctx.lineTo(canvas.width, canvas.height/7*i);
-            ctx.stroke();
+                ctx.lineTo(0, canvas.height/7*i);
+                ctx.lineTo(canvas.width, canvas.height/7*i);
+                ctx.stroke();
 
-            ctx.lineTo(canvas.width/7*i, 0);
-            ctx.lineTo(canvas.width/7*i, canvas.height);
-            ctx.stroke();
+            }
+            for(let i = 1 ; i < 8 ; i++)
+            {
+                ctx.lineTo(canvas.width/7*i, 0);
+                ctx.lineTo(canvas.width/7*i, canvas.height);
+                ctx.stroke();
             }
             
             ctx.fillStyle = "rgb(104, 104, 104)";
