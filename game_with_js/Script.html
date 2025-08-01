@@ -12,23 +12,26 @@
     
     <!-- Create Map -->
     
-    <canvas id="map_Canvas" width="400" height="300" style="border: 1px solid rgb(104, 104, 104);"></canvas>
+    <canvas id="map_Canvas" width="2100" height="2100" style="border: 1px solid rgb(255, 255, 255);"></canvas>
 
     <script>
+        /*
+        7x7 사이즈의 체스 보드판 -> 캔버스
+        */
 
         const canvas = document.getElementById("map_Canvas");
         const ctx = canvas.getContext("2d");
 
         // Set the initial position of the shape
-        let x = 150;
-        let y = 100;
+        let x = 0;
+        let y = 0;
         const shapeSize = 50;
-        const moveSpeed = 5;
+        const moveSpeed = 300;
 
         // Function to draw the shape on the canvas
         function drawShape() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgb(255, 0,0)";
+            ctx.fillStyle = "rgb(104, 104, 104)";
             ctx.fillRect(x, y, shapeSize, shapeSize);
         }
 
