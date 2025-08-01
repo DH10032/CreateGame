@@ -39,13 +39,13 @@
             for(let i = 1 ; i < 8 ; i++)
             {
                 ctx,beginPath();
-                ctx.lineTo(0, canvas.height/7*i);
+                ctx.moveTo(0, canvas.height/7*i);
                 ctx.lineTo(canvas.width, canvas.height/7*i);
                 ctx.stroke();
                 ctx.closePath();
 
                 ctx,beginPath();
-                ctx.lineTo(canvas.width/7*i, 0);
+                ctx.moveTo(canvas.width/7*i, 0);
                 ctx.lineTo(canvas.width/7*i, canvas.height);
                 ctx.stroke();
                 ctx.closePath();
