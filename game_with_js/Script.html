@@ -30,8 +30,8 @@
         const moveSpeed = canvas.width/7;
         let grid = canvas.width/7;
         let shapeSize = grid/3;
-        let x = grid/2-shapeSize;
-        let y = grid/2-shapeSize;
+        let x = (grid-shapeSize)/2;
+        let y = (grid-shapeSize)/2;
 
         // Function to draw the shape on the canvas
         function drawShape() {
