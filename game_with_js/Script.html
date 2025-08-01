@@ -22,8 +22,8 @@
         const canvas = document.getElementById("map_Canvas");
         const ctx = canvas.getContext("2d");
 
-        let window_w = window.outerWidth;
-        let window_h = window.outerHeight;
+        let window_w = window.innerWidth;
+        let window_h = window.innerHeight;
         canvas.height = canvas.width = window.outerHeight;
 
         // Set the initial position of the shape
