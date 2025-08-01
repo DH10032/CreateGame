@@ -29,7 +29,7 @@
         // Set the initial position of the shape
         let x = 0;
         let y = 0;
-        let grid;
+        let grid = canvas.width/7;
         const shapeSize = 50;
         const moveSpeed = canvas.width/7;
 
@@ -39,14 +39,13 @@
 
             for(let i = 1 ; i < 8 ; i++)
             {
-                grid = canvas.width/7;
-                ctx,beginPath();
+                ctx.beginPath();
                 ctx.moveTo(0, grid*i);
                 ctx.lineTo(canvas.width, grid*i);
                 ctx.stroke();
                 ctx.closePath();
 
-                ctx,beginPath();
+                ctx.beginPath();
                 ctx.moveTo(grid*i, 0);
                 ctx.lineTo(grid*i, canvas.height);
                 ctx.stroke();
