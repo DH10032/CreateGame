@@ -4,7 +4,7 @@ import sys
 
 class enemy():
     def __init__(self, name, level):
-        self.level = name
+        self.name = name
         self.level = level
 
         if level == 1:
@@ -27,6 +27,7 @@ class enemy():
             self.Hp = 50
             self.attack = random.randint(1, 6) + random.randint(1, 6)
 
+
 # def dataSave(data):
 #     with open("log/history1.json", "w", encoding="utf-8") as f:
 #             json.dump(data, f, ensure_ascii=False, indent="\t")
@@ -35,6 +36,7 @@ class enemy():
 #     with open(filename, "r", encoding="utf-8") as f:
 #         return json.load(f)
     
-for i in range(sys.argv[1]):
-    enemy(sys.argv[2])
-    print()
+A = enemy(sys.argv[1], int(sys.argv[2]))
+print("몬스터 : ",A.name)
+print("HP : ",A.Hp)
+print("attack : ",A.attack)
