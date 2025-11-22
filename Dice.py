@@ -1,5 +1,5 @@
 import random
 
-def Dice(min, max):
-    val = random.random(min, max)
+def roll(min, max):
+    val = random.randrange(min, max)
     return val
