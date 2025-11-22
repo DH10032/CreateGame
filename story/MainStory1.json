@@ -29,6 +29,156 @@
       "title": "고대 유적 탐험",
       "summary": "오래된 유적에 숨겨진 보물과 비밀을 찾아 나선다. 함정과 수호자가 기다린다.",
       "difficulty": 20
+    },
+    {
+      "scenario_id": "tavern_brawl",
+      "title": "선술집 난투극",
+      "summary": "여관에서 술에 취한 용병들과 시비가 붙는다. 싸움, 회유, 도주 중 선택해야 한다.",
+      "difficulty": 11
+    },
+    {
+      "scenario_id": "missing_child",
+      "title": "실종된 아이",
+      "summary": "마을 아이가 사라졌다. 숲 깊은 곳에서 이상한 소리가 들린다는 목격담이 있다.",
+      "difficulty": 14
+    },
+    {
+      "scenario_id": "cursed_village",
+      "title": "저주받은 마을",
+      "summary": "주민들이 하나둘 병들어가는 마을. 우물에서 검은 물이 솟아오른다.",
+      "difficulty": 17
+    },
+    {
+      "scenario_id": "ghost_manor",
+      "title": "유령 저택",
+      "summary": "버려진 귀족 저택에서 밤마다 비명소리가 들린다. 보물이 숨겨져 있다는 소문이 있다.",
+      "difficulty": 18
+    },
+    {
+      "scenario_id": "bridge_troll",
+      "title": "다리지기 트롤",
+      "summary": "강을 건너려면 트롤의 수수께끼를 풀거나 통행료를 내야 한다.",
+      "difficulty": 13
+    },
+    {
+      "scenario_id": "noble_escort",
+      "title": "귀족 호위",
+      "summary": "귀족의 마차를 호위하며 이동한다. 도중에 도적과 자객의 습격이 있다.",
+      "difficulty": 16
+    },
+    {
+      "scenario_id": "underground_arena",
+      "title": "지하 투기장",
+      "summary": "불법 투기장에서 자유를 얻으려면 세 번의 싸움에서 이겨야 한다.",
+      "difficulty": 19
+    },
+    {
+      "scenario_id": "smuggler_deal",
+      "title": "밀수업자의 거래",
+      "summary": "항구에서 수상한 밀수업자가 위험한 일을 제안한다. 보상은 좋지만 위험하다.",
+      "difficulty": 15
+    },
+    {
+      "scenario_id": "temple_trial",
+      "title": "신전의 시련",
+      "summary": "고대 신전에서 신의 축복을 받기 위한 시련을 치른다. 육체, 정신, 영혼의 시험.",
+      "difficulty": 20
+    },
+    {
+      "scenario_id": "plague_outbreak",
+      "title": "역병 발생",
+      "summary": "도시에 정체불명의 역병이 퍼진다. 치료법을 찾거나 탈출해야 한다.",
+      "difficulty": 18
+    },
+    {
+      "scenario_id": "dragon_egg",
+      "title": "용의 알",
+      "summary": "숲에서 버려진 용의 알을 발견한다. 부화시킬지, 팔지, 돌려놓을지 결정해야 한다.",
+      "difficulty": 16
+    },
+    {
+      "scenario_id": "time_rift",
+      "title": "시간의 균열",
+      "summary": "이상한 균열을 통과해 과거나 미래로 이동한다. 역사를 바꿀 수도 있다.",
+      "difficulty": 22
+    },
+    {
+      "scenario_id": "assassin_contract",
+      "title": "암살 의뢰",
+      "summary": "누군가 당신에게 암살 의뢰를 한다. 거부하면 당신이 표적이 될 수도 있다.",
+      "difficulty": 17
+    },
+    {
+      "scenario_id": "ship_mutiny",
+      "title": "선상 반란",
+      "summary": "배를 타고 가던 중 선원들의 반란이 일어난다. 어느 편에 설지 선택해야 한다.",
+      "difficulty": 15
+    },
+    {
+      "scenario_id": "witch_bargain",
+      "title": "마녀의 거래",
+      "summary": "늪지의 마녀가 강력한 힘을 주겠다고 제안한다. 대가는 무엇일까?",
+      "difficulty": 16
+    },
+    {
+      "scenario_id": "goblin_siege",
+      "title": "고블린 포위",
+      "summary": "작은 마을이 고블린 무리에게 포위당했다. 방어를 준비하거나 탈출로를 찾아야 한다.",
+      "difficulty": 14
+    },
+    {
+      "scenario_id": "enchanted_forest",
+      "title": "마법의 숲",
+      "summary": "요정들이 사는 숲에 들어간다. 길을 잃기 쉽고, 환상에 속을 수 있다.",
+      "difficulty": 13
+    },
+    {
+      "scenario_id": "gladiator_champion",
+      "title": "검투사 챔피언",
+      "summary": "거대 콜로세움에서 열리는 대회에 참가한다. 우승하면 자유와 명예를 얻는다.",
+      "difficulty": 21
+    },
+    {
+      "scenario_id": "necromancer_tower",
+      "title": "네크로맨서의 탑",
+      "summary": "언데드를 부리는 마법사의 탑을 공략한다. 각 층마다 강력한 언데드가 기다린다.",
+      "difficulty": 19
+    },
+    {
+      "scenario_id": "royal_conspiracy",
+      "title": "왕실 음모",
+      "summary": "왕실 내부의 암투에 휘말린다. 왕자들의 권력 다툼에서 살아남아야 한다.",
+      "difficulty": 18
+    },
+    {
+      "scenario_id": "desert_caravan",
+      "title": "사막 대상",
+      "summary": "사막을 횡단하는 대상단과 함께 여행한다. 모래폭풍, 도적, 괴물의 위험이 있다.",
+      "difficulty": 15
+    },
+    {
+      "scenario_id": "haunted_mine",
+      "title": "유령 광산",
+      "summary": "폐광에서 광부들의 원혼이 출몰한다. 귀중한 광석이 남아있다는 소문이 있다.",
+      "difficulty": 14
+    },
+    {
+      "scenario_id": "thieves_guild",
+      "title": "도적 길드 입단",
+      "summary": "도적 길드에서 입단 시험을 치른다. 불가능한 절도 임무를 성공시켜야 한다.",
+      "difficulty": 17
+    },
+    {
+      "scenario_id": "demonic_pact",
+      "title": "악마의 계약",
+      "summary": "절망적인 상황에서 악마가 나타나 계약을 제안한다. 영혼을 거는 도박.",
+      "difficulty": 20
+    },
+    {
+      "scenario_id": "sky_pirates",
+      "title": "하늘 해적",
+      "summary": "비행선을 탄 해적들이 습격한다. 비행선을 탈취하거나 격추해야 한다.",
+      "difficulty": 18
     }
   ]
 }
